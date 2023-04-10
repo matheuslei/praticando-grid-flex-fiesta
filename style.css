@@ -161,3 +161,9 @@ p {
 footer p a {
   color: #111;
 }
+
+@media (max-width: 940px) {
+  .conteudo {
+    grid-template-columns: 1fr;
+  }
+}
