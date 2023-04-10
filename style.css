@@ -103,6 +103,10 @@ p {
   top: 30px;
   right: -30px;
 }
+.introducao-cover img {
+  object-fit: cover;
+  height: 100%;
+}
 
 .botao {
   background: #e21;
@@ -163,7 +167,37 @@ footer p a {
 }
 
 @media (max-width: 940px) {
+  body {
+    gap: 30px;
+    margin-top: 20px;
+  }
+
+  .header {
+    gap: 30px;
+  }
+  .conteudo {
+    text-align: center;
+  }
+  .conteudo-vantagens {
+    grid-template-columns: 1fr;
+  }
+  .introducao {
+    text-align: left;
+    justify-items: start;
+  }
+  .introducao-interior img {
+    display: none;
+  }
+  .introducao::before {
+    display: none;
+  }
+}
+@media (max-width: 600px) {
   .conteudo {
     grid-template-columns: 1fr;
+  }
+  .introducao-cover img {
+    width: 100%;
+    height: 350px;
   }
 }
